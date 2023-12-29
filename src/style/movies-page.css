@@ -1,0 +1,24 @@
+.movies_page h3.title_page::before {
+    left: 0;
+    width: 3px;
+    content: '';
+    height: 100%;
+    border-radius: 2px;
+    position: absolute;
+    background-color: var(--red-color);
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+
+.movies_page .page_selector button {
+    padding: 10px 20px;
+    border-color: transparent !important;
+    background-color: var(--red-color) !important;
+}
+.movies_page .page_selector button.active,
+.movies_page .page_selector button:hover {
+    color: var(--red-color) !important;
+    background-color: var(--white-color) !important;
+}

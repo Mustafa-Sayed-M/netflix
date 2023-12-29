@@ -1,0 +1,85 @@
+.card_clip {
+    cursor: pointer;
+}
+
+.card_clip .poster .show_details {
+    opacity: 0;
+    transform: scaleX(0);
+    backdrop-filter: blur(5px);
+    -webkit-transform: scaleX(0);
+    -moz-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    -o-transform: scaleX(0);
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.card_clip .poster:hover .show_details {
+    opacity: 1;
+    transform: scaleX(1);
+    -webkit-transform: scaleX(1);
+    -moz-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    -o-transform: scaleX(1);
+}
+
+.card_clip .poster .show_details .watch_link {
+    color: var(--red-color) !important;
+    background-color: var(--white-color);
+}
+
+.card_clip .poster .show_details .watch_link:hover {
+    color: var(--white-color) !important;
+    background-color: var(--red-color);
+}
+
+.card_clip .poster .show_details button.handel_recently_added {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 50%;
+    color: var(--red-color);
+    background-color: var(--white-color);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.card_clip .poster .show_details button.handel_recently_added:hover {
+    color: var(--white-color);
+    background-color: var(--red-color);
+}
+
+.card_clip .poster .show_details,
+.card_clip .poster .show_details .watch_link,
+.card_clip .poster .show_details button.handel_recently_added {
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+
+.card_clip .info button.heart.active {
+    color: var(--red-color) !important;
+}
+
+.card_clip .rating {
+    color: var(--star-color);
+}
+
+.card_clip .rating i {
+    animation: rotate linear 4s infinite;
+    -webkit-animation: rotate linear 4s infinite;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+    }
+}

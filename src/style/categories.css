@@ -1,0 +1,53 @@
+.categories {
+    position: relative;
+}
+
+.categories::before {
+    left: 0;
+    bottom: 0;
+    opacity: .4;
+    width: 100%;
+    height: 1px;
+    content: '';
+    position: absolute;
+    background-color: var(--white-color);
+}
+
+.categories li {
+    opacity: .5;
+    cursor: pointer;
+}
+
+.categories li.active,
+.categories li:hover {
+    opacity: 1;
+}
+
+.categories li::before {
+    width: 0;
+    bottom: 0;
+    left: 50%;
+    height: 1px;
+    content: '';
+    position: absolute;
+    transform: translateX(-50%);
+    background-color: var(--red-color);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+.categories li.active::before,
+.categories li:hover::before {
+    width: 100%;
+}
+
+.categories li,
+.categories li::before {
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
